@@ -11,7 +11,7 @@ namespace ConsoleAppTest
         static void Main(string[] args)
         {
             Host.CreateDefaultBuilder()
-                .ConfigureWebHostDefaults(webHostBuilder => webHostBuilder                    
+                .ConfigureWebHostDefaults(webHostBuilder => webHostBuilder                     
                     .Configure( app => app
                         .Run(context => context.Response.WriteAsync("Hello World!")))) 
                 .Build()
